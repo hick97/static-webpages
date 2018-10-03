@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> Nike </title>
+	<!-- Tags meta importantes para o site -->
+	<!-- width=device-width: largura da minha pagina será igual a largura do dispositivo. initial-scale: Nivel inicial do zoom = 1.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="Empresa especializada em artigos esportivos.">
+	<meta name="keywords" content="Esporte, Sites, Marketing">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Henrique Augusto">
+	<link rel="stylesheet"  href="css/style.css">
+	<!-- Link para utilizar pacote de ícones aleatórios (Fonts awesome): -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	-->
+	<!-- Fonte - Google fonts (Lato): -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link rel="icon" href="img/logoblack.png">
+</head>
+<body>
+	<header class="cabecalho container">
+	<!-- Cabeçalho: -->
+		<h1 class="logo"> 
+			<a href="index.html"> Nike - Just do it</a> 
+		</h1>
+		<button class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+	<!-- Menu - Bars: -->
+		<nav class="menu">
+			<a class="btn-close" ><i class="fa fa-times"></i></a>
+			<ul>
+				<li> <a href="#"> Home </a></li>
+				<li> <a href="#"> Clientes </a></li>
+				<li> <a href="#"> Serviços </a></li>
+				<li> <a href="#"> Blog </a></li>
+				<li> <a href="#"> Quem somos </a></li>
+				<li> <a href="#"> Contatos </a></li>	
+			</ul>
+		</nav>
+	</header>
+	<!-- Banner -->
+	<div class="banner container">
+		<div class="title">
+			<h2> OUSE INOVAR!</h2>
+			<h3> Criamos experiências e estabelecemos ações estratégicas que conectam marcas e consumidores.</h3>	
+		</div>
+		<div class="buttons">
+			<button class="btn btn-cadastrar"> Cadastrar <i class="fa fa-arrow-circle-right fa-lg"> </i></button>
+			<button class="btn btn-sobre"> Sobre <i class="fa fa-question-circle fa-lg"></i> </button>
+		</div>
+	</div>
+	<!-- Main and Article: -->
+	<main class="servicos container">
+		<article class="servico">
+			<a href="#"><img src="img/criacoes.jpg" alt="Artigos Esportivos "></a>
+			<div class="inner">
+				<a href="#"> Artigos Esportivos </a>
+				<h4> Futebol, Basquete e Derivados </h4>
+				<p>A americana Nike pertence àquele escasso time de companhias reputadas por revolucionar o setor em que operam. Maior fabricante mundial de artigos esportivos, a Nike foi pioneira no movimento de terceirização da produção, que acabou por se tornar um padrão global. Sem fábricas próprias, a empresa passou a se concentrar na inteligência de marketing, design e inovação. Também transformou sua marca em um ícone mundial ao casar cultura popular com esportes e elevar o culto ao atleta a um ponto nunca antes imaginado. Nesse processo, criou o marketing esportivo moderno e produziu uma legião de milionários. Por trás dessas decisões havia sempre a cabeça do fundador, Phil Knight. Conta-se que quando Knight assistiu a Tiger Woods, então com 20 anos, vencer pela terceira vez seguida o campeonato amador de golfe dos Estados Unidos, em 1996, comentou: “Espero que a gente contrate esse garoto. Senão, espero que ele vire médico”.</p>
+			</div>
+		</article>
+		<article class="servico">
+			<a href="#"><img src="img/patrocinios.jpg" alt="Patrocínios "></a>
+			<div class="inner">
+				<a href="#"> Patrocínios e Donativos </a>
+				<h4> QUEM POSSO CONTACTAR SOBRE PATROCÍNIOS NIKE? </h4>
+				<p>A Nike procura proativamente atletas que representem a marca e não aceita pedidos espontâneos de patrocínio da Nike.</p>
+				<h4> QUEM POSSO CONTACTAR SOBRE DONATIVOS NIKE? </h4>
+				<p>De momento, os donativos de produtos da Nike estão disponíveis apenas para empresas ou particulares nos Estados Unidos ou na Holanda. Os pedidos de donativos devem ser enviados através de um formulário online. A Nike não aceita pedidos de donativos em formato físico, pedidos de donativos enviados por e-mail ou ofertas espontâneas de dinheiro.<br><br>
+				Para mais informações sobre os investimentos da Nike na comunidade, visite a nossa página de impacto na comunidade.</p>
+				<h4> QUEM POSSO CONTACTAR SOBRE PATROCÍNIOS E DONATIVOS HURLEY? </h4>
+				<p>Os pedidos de donativos e patrocínios da Hurley podem ser enviados para reception@hurley.com. Se o seu pedido for aceite, um representante da Hurley entrará em contacto consigo.</p>
+			</div>		
+		</article>
+	</main>
+	<!-- Newsletter: -->
+	<section class="newsletter container">
+			<h2> Inscreva-se agora! </h2>
+			<h3> Receba nossas promoções por email </h3>
+			<form method="post">				
+				<input type="email" placeholder="Seu email">
+				<button> Cadastrar </button>
+			</form>	
+		</section>
+	<footer class="rodape container">
+		<div class="social-icons">
+			<a href="#" class="btn-facebook fa-lg"> <i class="fab fa-facebook"></i></a>
+			<a href="#" class="btn-twitter fa-lg"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="btn-google fa-lg"><i class="fab fa-google"></i></a>	
+		</div>
+		<p class="copyright"> © Nike - Todos os direitos reservados </p>
+	</footer>
+	<!-- Events - jQuery: -->
+	<script src="jquery-3.2.1.min.js"></script> 
+	<script>
+
+		$(function (e){
+			
+			$(".btn-menu").click(function(){
+			$(".menu").show();
+			});
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+			});
+		});
+
+	</script>
+
+</body>
+</html>

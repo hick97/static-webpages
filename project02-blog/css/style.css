@@ -1,0 +1,139 @@
+/* RESET - Tornando acessível a mais navegdores. */
+*{margin: 0; padding: 0; font-size: 100%;  font-family: 'Lato', sans-serif; font-weight: 300; box-sizing: border-box; border: none; outline: none;}
+body{background: url(../img/body.jpeg);}
+img{max-width: 100%;}
+ul{list-style: none;}
+a{text-decoration: none;}
+/* Container */
+.container{width: 100%; float: left; padding: 3% 4%; text-align: center;}
+/* Cabeçalho */
+.cabecalho{background-color: #f75a5a; border: solid 2.5px black;}
+.icon a{display:none; width: 130px; height: 130px; float: left; background: url(../img/bit2.jpeg) center center/130px no-repeat; font-size: 0; border-radius: 80px; border: 5px solid #111; }
+/* Center center/56px: utilizando imagem maior q o espaço -> evita perda de qualidade  */
+.logo{color:#fff;font-family: 'Dancing Script', cursive;font-size: 3em; text-shadow: 3px 3px 4px red;}
+.subtitle h2{color: #111;font-family: 'Dancing Script', cursive;}
+.btn-menu{width: 56px;float: left;height: 56px; text-align: center; color: #111;  cursor: pointer; background-color: rgba(255,255,255,0.0);}
+.search_menu form{display:none; width: 30%; float: right;}
+.search_menu input[type="search"]{width: 85%; float:left; padding: 18.5px 10px; background-color: #111;color: #fff;}
+.btn-search{width: 15%; float: right; padding: 16.5px 10px; background-color: #fff; color: #f75a5a; cursor: pointer; border: solid 2.0px #111;}
+/* Menu - Bars */
+.menu{display: none; width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left: 0;}
+.btn-close{font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0; }
+.menu ul{width: 100%; float: left; text-align: center; margin-left: 2%;}
+.menu li{padding: 1.5%;}
+.menu li a{font-family: 'Dancing Script', cursive;font-size:2.5em; color: #fff; padding: 1.5% 3%; }
+.menu li a:hover {border:1px solid #3a3838;}
+.social-icons{width: 100%;float: right; text-align: center; color: #111;  cursor: pointer; background-color: rgba(255,255,255,0.5);}
+.social-icons a{color: #111; margin-right: 3%; margin-bottom: 3%;}
+.social-icons a:last-child{margin-right: 0;} /* Evitando problemas com a margem à direita do ultimo ícone */
+.btn-facebook:hover{color: #3B5998;}
+.btn-twitter:hover{color: #54A4D6;}
+.btn-instagram:hover{color: red;}
+.btn-email:hover{color: blue;}
+
+/* Serviços */
+.servico{width: 100%; background-color: rgba(255,255,255,0.5); text-align: left; border-radius: 7px;margin-bottom: 3%; margin-top: 3%; }
+.servico img{ border-radius: 5px; margin-top: 3%; width: 100%; border: 3px solid #111;}
+.servico h1 a{ color: #111; font-size: 1.5em; padding: 2% 4%; margin-left: -7px; font-weight: 700;}
+.servico h1 a:hover {color: #f75a5a;}
+.inner{padding: 7%;}
+.inner a{font-size: 2em; color: #130400; font-weight: 700; font-family: 'Dancing Script', cursive; }
+.inner h4{font-size: 1em; color: #130400; margin-top: 3%; font-weight: 400;}
+.inner p{margin-top: 6%; color: #130400; line-height: 1.5em; text-align: justify; font-weight: 400;}
+.email {text-decoration: underline; text-align: justify;}
+/* Assinatura */
+.assinatura {display: none; width: 25%; height: 100%; border-radius: 7px 30px 7px 30px; float: right; border: 2px solid #111; margin-top: 7%; }
+.dados{padding: 5%;}
+.dados a{font-size: 2em; font-weight: 400; text-align: center; text-decoration: ; color: #fff; text-shadow: 3px 3px 4px red; }
+.dados input{width: 85%; float:left; padding: 3% 4%; background-color: #fff; color: #111; border-radius: 5px; margin-top: 3%; margin-left: 7%; border: 1px solid #fff;}
+.dados form{margin-top: 3%;}
+.dados button{width: 85%; background-color: #111; color: #fff; border-radius: 5px;  cursor: pointer; margin: 7% 0%; padding: 5%; font-weight: 400;}
+.dados button:hover{border: 2px solid #fff;}
+.dados p{text-align: center; line-height: 1.5em; color: #111; margin: 5% 3%; }
+
+/* Contatos */
+.contacts{background-color: rgba(247,90,90,0.8); border: 1px solid #111;}
+.contacts h1 p:hover {color: #fff;}
+.contacts h1 i{float: left; margin-left: 0.5%; color: #111;}
+.contacts h1 p{font-size: 1em; color: #111; font-weight: 700; margin-right: 75.5%; line-height: -5%; clear: right; cursor: pointer;}
+.contacts h3{margin-top: 3%;}
+.social_media a{display:none; width: 180px; height: 180px; float: right; background: url(../img/bit1.jpeg) center center/180px no-repeat; font-size: 0; border-radius: 90px; border: 3px solid #111; margin: 0 5% 0 4%; }
+.social_media_networks li a{float: left; margin-top: 3%;font-family: 'Merienda', cursive; color: #111;clear: both;}
+.social_media_networks li a:hover{text-decoration: underline;}
+.top{display:none;margin-top: 4%; font-size: 1.3em; float: left; font-family: 'Merienda', cursive;  color:#111; text-align: center;}
+.top:hover{text-decoration: underline;}
+/* Footer */
+.copyright{color: #fff; font-size: 0.8em;}
+.rodape{background-color: #130400;}
+/* Media Types */
+/* screen -> Para monitores ou dispositivos com telas coloridas e resolução adequada. 
+   print -> Para impressoras. Muito usado para dar uma versão de impressão do site.	
+*/
+/* min-width: Especifica em que situação o bloco de código será utilizado; */
+
+/* ---- BREAKPOINTS ---- */
+/* Mobile first - Criação pensando no layout mobile */
+/* Small devices - Smartphones */
+@media screen and (min-width: 480px){
+	.logo{font-size: 4.5em;}
+	
+	
+}
+/* Small devices - Tablets */
+@media screen and (min-width: 768px){
+	.servico {margin-top: 0; width: 100%; height: 60%;}
+	.servico h1 a{font-size: 2em; margin-left: -3%; margin-top:3%;}
+	.inner{margin-top: -4%;}
+	.inner a{font-size: 2em;}
+	.servico img{width: 35%; float: left; margin: 3% 3%;}
+	.servico{width: 100%; float: left; margin-right: 2%;}
+	.servico:nth-child(2){margin-right: 0;} /* Zera a margem do segundo elemento, para um ficar ao lado do outro */
+	.contacts h1{font-size: 1.8em;}
+	.contacts h3{font-size: 1.5em;}
+	.contacts input{width: 70%; padding: 2%; float: left;margin-right: 1%;}
+	.contacts button{width: 29%; padding: 2%; float: right;margin-top: 0;}
+	
+}
+/* Medium devices - Tablets & Desktops */
+@media screen and (min-width: 960px){
+	.icon a{display: block !important; position: absolute; left: 20px;top: 20px;}
+	.title{width: 70%; float: left; text-align: left;}
+	.title h2{font-size: 2.5em;}
+	.title h3{font-size: 1.8em;}
+	.buttons{width: 30%; float: right; margin-right: 0;}
+	.contacts input{width: 60%; float: none;}
+	.contacts button{width: 20%; float: none;}
+
+	
+}
+/* Large devices - Wide Screens */
+@media screen and (min-width: 1280px){
+	.icon a{position: absolute; left: 10%;top: 20px; width: 150px; height: 150px;  background: url(../img/bit2.jpeg) center center/150px no-repeat;}
+	.btn-menu{display: none;}
+	.btn-close{display: none;}
+	.menu{width: 70%; height: 56px; line-height: 56px; float: left; background-color: #111; display: block !important; position: static;}
+	.menu li{padding: 0; float: left;}
+	.menu li a{font-family: 'Dancing Script', cursive;color: #f5f5f5; font-size: 1.3em; padding: 15px 40px; }
+	.menu li a:hover{border: none; color: rgba(125,125,125,0.7);border: 1px solid #fff;}
+	.social-icons{text-align: center; margin-top: 3%;}
+	.social-icons a i{width: 5%;}
+	.cabecalho{border-bottom: none; border-width: 2px; }
+	.search_menu form{display: block !important;}
+	.servico {margin-top: 0; width: 70%; height: 60%;}
+	.servico h1 a{font-size: 2em; margin-left: -3%; margin-top:3%;}
+	.inner{margin-top: -4%;}
+	.inner a{font-size: 2em;}
+	.servico img{width: 35%; float: left; margin: 3% 3%;}
+	.assinatura{display: block !important; background: linear-gradient(to top left,#f54ea2, #ff7676);}
+	.social_media a{display: block !important;}
+	.contacts h3{ font-size: 1.3em; font-family: 'Merienda', cursive; color: #111;}
+	.contacts h1 i{margin-left: 1.5%;}
+	.contacts h1 p{margin-right: 84.5%;}
+	.social_media_networks li a{font-size: 1em; margin-top: 2%; margin-right: 1%; margin-left: 3%; color: #111; clear: none;}
+	.top{display: block !important; margin-bottom: -3%; margin-left: 45%;}
+
+
+
+	
+/*Responsive Image Slideshow | HTML & CSS*/	
+}

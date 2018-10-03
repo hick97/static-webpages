@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> Vitória Dantas </title>
+	<!-- Tags meta importantes para o site -->
+	<!-- width=device-width: largura da minha pagina será igual a largura do dispositivo. initial-scale: Nivel inicial do zoom = 1.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="Empresa especializada em artigos esportivos.">
+	<meta name="keywords" content="Esporte, Sites, Marketing">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Henrique Augusto">
+	<link rel="stylesheet"  href="css/style.css">
+	<!-- Link para utilizar pacote de ícones aleatórios (Fonts awesome): -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Fonte - Google fonts (Lato): -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet"> 
+	<link rel="icon" href="img/bitmoji1.png">
+	<link rel="icon" href="img/bitmoji2.png">
+</head>
+<body>
+	<header class="cabecalho container" id="topo">
+	<!-- Cabeçalho: -->
+		<h1> 
+			<a href="index.html" class="logo" > Vitória Dantas </a>
+			<a href="index.html" class="subtitle">	<h2> •fashion design student• </h2>
+			</a>			 
+		</h1>
+		<div class="icon"><a href="index.html">Bitmoji</a></div>		
+	</header>
+	<section class="search_menu">
+		<!-- Campo de busca: -->
+		<form method="post">
+			<input type="search" placeholder="Search...">
+			<!-- Tag <i class="fas fa-search"></i> coloca um icone especifico do pacote [Tem no site] -->	
+			<button class="btn-search"> <i class="fas fa-search fa-lg"></i></button>			
+		</form> 		
+	</section>
+	<button class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+	<!-- Menu - Bars: -->
+		<nav class="menu">
+			<a class="btn-close" ><i class="fa fa-times"></i></a>
+			<ul>
+				<li> <a href="#"> Home </a></li>
+				<li> <a href="#"> About Me </a></li>
+				<li> <a href="#"> My Work </a></li>
+				<li> <a href="#contact"> Contacts </a></li>
+				<li> <a href="#"> Partners </a></li>
+				
+			</ul>			
+		</nav>
+		<div class="social-icons">
+				<a href="https://www.facebook.com/vitoria.dantas.31" class="btn-facebook" target="_blank"> <i class="fab fa-facebook fa-lg"></i></a>
+				<a href="https://twitter.com/vitoria_ldantas" class="btn-twitter" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+				<a href="https://www.instagram.com/vitoriadantas/?hl=pt-br" class="btn-instagram" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+				<a href="#" class="btn-email" title="vitoria.l.dantas@gmail.com"><i class="fas fa-envelope-square fa-lg"></i></a>
+		</div>
+
+	
+	<!-- Main and Article: -->
+	<main class="servicos container">
+		<article class="servico">
+			<h1><a href="#"><i class="fas fa-home"></i> Home </a></h1><br>
+			<a href="#"><img src="img/foto12.jpeg" alt="Sobre mim... "></a>
+			<div class="inner">
+				<a href="#"> Welcome! </a>
+				<h4> Fashion, Photography, Experiences </h4>
+				<p> Hello dear reader, welcome to my world! A place where I share some of my experiences as a student of Fashion Design and Photographic Model. Here is the right place to find current and relevant content on fashion, beauty and lifestyle, with tricks, tips, trends and news to inspire you to make the most of your Personal Signature yet! Stay in.</p>
+			</div>
+		</article>
+		<!-- Assinatura: -->
+		<aside class="assinatura">
+				<div class="dados">
+					<a href="#"> Register now! </a>
+					<p> Keep up with our news and receive all the updates by email! </p>
+					<form>
+						<input type="text" name="nome" placeholder="Name">
+						<input type="email" name="email" placeholder="Email">
+						<button class="btn-assinatura"> Subscribe </button>
+					</form>
+				</div>		
+		</aside>
+		
+	</main>
+	<!-- Contacts: -->
+	<section class="contacts container" id="contact">
+			<h1> <i class="fas fa-user fa-lg"></i></h1>
+			<h1><p>Social</p></h1>
+			<div class="social_media">
+				<a href="#contact" >Bitmoji</a>
+			</div>
+			<h3>Follow our social networks, ask questions or be part of our partners!</h3>
+			<ul class="social_media_networks">
+				<li> <a href="#"> <i class="fab fa-facebook fa-lg"></i> /vitoria.dantas.31</a></li>
+				<li> <a href="#"> <i class="fab fa-twitter fa-lg"></i> @vitoria_ldandas </a></li>
+				<li> <a href="#"><i class="fas fa-envelope-square fa-lg"></i> vitoria.l.dantas@gmail.com </a></li>	
+				<li> <a href="#" class="link_insta"> <i class="fab fa-instagram fa-lg"></i> @vitoriadantas </a></li>
+			</ul>
+			<a href="#" class="top">Go to top <i class="fas fa-arrow-up"></i></a>
+		
+		</section>
+	<footer class="rodape container">
+		<p class="copyright"> &copy Henrique Augusto - All rights reserved. </p>
+	</footer>
+	<!-- Events - jQuery: -->
+	<script src="jquery-3.2.1.min.js"></script> 
+	<script>
+		$(function (e){
+			$('.menu li:nth-child(4)').click(function() {
+					$("html, body").animate({scrollTop: $('#contact').offset().top }, 1000);				
+			});
+			$('.top').click(function() {
+				$("html, body").animate({scrollTop: $('#topo').offset().top }, 1000);				
+			});
+			$(".btn-menu").click(function(){
+			$(".menu").show();
+			});
+		$(".btn-close").click(function(){
+			$(".menu").hide();
+			});
+		});
+		
+
+	</script>
+
+</body>
+</html>

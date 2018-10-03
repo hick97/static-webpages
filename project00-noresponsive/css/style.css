@@ -1,0 +1,47 @@
+/* RESET - Tornando acessível a mais navegdores. */
+*{margin: 0; padding: 0; font-size: 100%; font-family: 'Open Sans', sans-serif; font-weight: normal; box-sizing: border-box; border: none; outline: none;}
+img{max-width: 100%;}
+ul{list-style: none;}
+a{text-decoration: none;}
+h2{font-size: 1.5em; color: #333;}
+p{font-size: 1em; color: #777;}
+/* Cabeçalho */
+.cabecalho{width: 100%; float: left; padding: 60px 8%; background-color: black;}
+.logo a{width: 259px; height: 150px; position: absolute; left: 12; top: 0; background: url(../img/nikeinv.png) no-repeat; font-size: 0;}
+.cabecalho form{width: 30%; float: right;}
+.cabecalho input[type="text"]{width: 85%; float:left; padding: 12px 10px; border-radius: 5px 0 0 5px;}
+.cabecalho button{width: 15%; float: right; padding: 12px 10px; background-color: #0cae98; color: #fff; cursor: pointer; border-radius: 0 5px 5px 0;}
+/* Menu de navegação */
+.menu{width: 100%; float: left; background-color: #13c7ae; padding: 18px 8%;}
+.menu li{float: left;}
+.menu li a{color: black; margin: 25px;}
+.menu li a:hover{color: #fff} /* Deixa o texto branco ao passar o mouse em cima */
+/* Social Icons */
+.social-icons{float: right;}
+.social-icons a{color: #fff; margin-left: 12px;}
+.btn-facebook:hover{color: #3B5998;}
+.btn-twitter:hover{color: #54A4D6;}
+.btn-google:hover{color: #D73D32;}
+/* Main and Article */
+.principal{width: 100%; float: left; padding: 20px 8%;}
+.sobre{width: 70%; float: left; padding: 0 20px 20px 0;}
+.sobre h2{margin-bottom: 15px;}
+.sobre img{ width: 60%; float: left; border-radius: 5px; margin: 0 15px 15px 0;}
+.sobre p{text-align: justify;}
+/* Aside - Onde estamos? */
+.onde-estamos{width: 30%; float: right;padding: 10px 20px; background-color: #f5f5f5; border-radius: 5px; }
+.onde-estamos h2{margin-bottom: 5px;}
+.onde-estamos iframe{width: 100%; height: 250px; margin: 20px 0;}
+.onde-estamos li{color: #777; margin-bottom: 10px;}
+.onde-estamos i{margin-right: 5px;}
+/* Newsletter */
+.newsletter{width: 100%; float: left; background-color: #13c7ae; padding: 50px 8%;}
+.newsletter h3{font-size: 1.8em; color: #111;}
+.newsletter p{font-size: 1.2em; color: #111;}
+.newsletter form{width: 100%; float: left; margin-top: 10px;}
+.newsletter input{width: 40%; margin-right: 1%; padding: 15px 10px; border: 1px solid white; border-radius: 5px; color: white; background-color: initial; float: left;}
+/* Prestar atenção que os dois inputs mais as margens dao 82%, sobra 18% para o botão*/
+.newsletter button{width: 18%; background-color: #fff; padding: 15px 10px; border-radius: 5px; float: right; cursor: pointer;}
+/* Footer */
+.rodape{width: 100%; float: left; background-color: #111; padding: 20px 8%;}
+.rodape p{color: #fff;}
