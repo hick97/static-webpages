@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> Buzzmonitor - Admin </title>
+	<!-- Tags meta importantes para o site -->
+	<!-- width=device-width: largura da minha pagina será igual a largura do dispositivo. initial-scale: Nivel inicial do zoom = 1.-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="Buzzmonitor Challenge">
+	<meta name="keywords" content="Sites, Social">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Henrique Augusto">
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet"  href="css/animate.css">
+
+	<!-- Link para utilizar pacote de ícones aleatórios (Fonts awesome): -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Antic+Didone" rel="stylesheet">
+	
+	<!-- Fonte - Google fonts (Lato): -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet"> 
+	<!-- Browser Icon -->
+	<link rel="icon" href="img/logo.jpg">	
+</head>
+<body>
+	<header class="header-info">
+	<!-- Cabeçalho: -->	
+	<nav class="nav-top">
+		<div class="drop-profile">
+			<img src="img/pp.jpg"><i class="fas fa-angle-down"></i>
+		</div>
+		<ul>
+			<li>LOGO</li>			
+			<li>Monitoring <i class="fas fa-angle-down"></i></li>
+			<li>Costumer Care <i class="fas fa-angle-down"></i></li>
+			<li>Analytics <i class="fas fa-angle-down"></i></li>
+			<li>Dashboard</li>
+		</ul>
+	</nav>
+	</header>
+	<section class="title">
+		<h1>Buzzmonitor Admin</h1>
+		<h4>This page provides an overview of buzzmonitor challenge.</h4>
+	</section>		
+	<!-- Main and Article: -->
+	<main class="content-wrapper">
+		<form class="search-user animated zoomIn" method="" action="">
+			<div class="form-group">
+				<label for="email">Email adress: *</label><br>
+				<input type="email" name="email" placeholder="Search emails and report IDs/URLs" required>
+				<input type="button" name="search" value="Search" class="btn-search">
+			</div>
+		</form>
+		<div class="trigger-box">
+			<div class="alert-message">
+				<div class="alert alert-success alert-dimissable animated fadeInRight">
+					<span class="close">x</span>
+					<strong>Success!</strong>
+					"User found."
+				</div>
+			</div>
+		</div>
+		<div class="TabControl animated zoomIn">
+		    <div id="header">
+		        <ul class="abas">
+		            <li>
+		                <div class="aba">
+		                    <span><i class="fas fa-users"></i>User</span>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="aba">
+		                    <span><i class="fas fa-chart-bar"></i>Consumed</span>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="aba">
+		                    <span><i class="fas fa-project-diagram"></i>Projects & Collect</span>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="aba">
+		                    <span><i class="fas fa-cubes"></i>Modules</span>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="aba">
+		                    <span><i class="fas fa-plus-circle"></i>Other</span>
+		                </div>
+		            </li>
+		        </ul>
+		    </div>
+		    <form id="content" method="" action="">
+		        <div class="conteudo animated zoomIn">
+		            <section class="personal-info">
+		            	<section class="part-left">
+		            		<label>User</label><br>
+		            		<label for="activation-state">Activation state</label><br>
+		            		<label for="account-type">Account type *</label><br>
+		            		<label for="new-password">Password</label><br>
+		            		<label for="password-confirmation">Password confirmation</label><br>
+		            	</section>
+		            	<section class="part-right">
+		            		<h4>emailuser@buzzmonitor.com.br</h4><br>
+							<select id="activation-state" required>
+								<option>Active</option>
+								<option>Option</option>
+								<option>Option</option>
+							</select><br>
+							<select id="account-type" required>
+								<option>Unassigned</option>
+								<option>Option</option>
+								<option>Option</option>
+							</select><br>
+							<input type="password" name="new-password"><br>
+							<input type="password" name="password-confirmation"><br>
+		            	</section>	
+		            </section>
+		            <section class="personal-info">
+		            	<section class="part-left">
+		            		<label for="number-projects">Max number of projects</label><br>
+		            		<label for="number-post">Max number of post collected per month</label><br>
+		            		<label for="number-trackeds">Max number of tracked analytics profiles</label><br>
+		            		<label for="number-crm">Max number of CRM profiles</label><br>
+		            	</section>
+		            	<section class="part-right">
+		            		<input type="number" name="number-projects" min="0" value="0"><br>
+		            		<input type="number" name="number-post" min="0" value="0"><br>
+		            		<input type="number" name="number-trackeds" min="0" value="0"><br>
+		            		<input type="number" name="number-crm" min="0" value="0"><br>
+		            	</section>
+		            	<section class="unlimited-numbers">
+							<label class="switch">
+							  <input type="checkbox" id="unlimited-projects">
+							  <span class="slider round"></span>
+							</label><label>Unlimited number</label><br>
+							<label class="switch">
+							  <input type="checkbox" id="unlimited-post" >
+							  <span class="slider round"></span>
+							</label><label>Unlimited number</label><br>
+							<label class="switch">
+							  <input type="checkbox" id="unlimited-trackeds">
+							  <span class="slider round"></span>
+							</label><label>Unlimited number</label><br>
+							<label class="switch">
+							  <input type="checkbox" id="unlimited-crm">
+							  <span class="slider round"></span>
+							</label><label>Unlimited number</label><br>
+							<label class="switch">
+							  <input type="checkbox" id="check-all">
+							  <span class="slider round"></span>
+							</label><label>Check all</label><br>
+		            	</section>	
+		            </section>
+		        </div>
+		        <div class="conteudo animated zoomIn">
+		            <section class="consumption-info">
+		            	<section class="part-left">
+		            		<label>Number of post consumed this month</label><br>
+		            		<label for="check-extra-post">Extra package of posts</label><br>
+		            		<label for="number-extra-post">Number of extra posts</label><br>
+		            		<label for="progress-post">Percentage of posts consumed this month</label><br>
+		            	</section>
+		            	<section class="part-right">
+		            		<h4>10.000</h4><br>
+							<label class="switch">
+							  <input type="checkbox" id="check-extra-post" >
+							  <span class="slider round"></span>
+							</label><br>
+							<input type="number" name="number-extra-post" disabled>
+							<section class="progress" id="progress-post">
+							  <section class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+							  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+							    80%
+							  </section>
+							</section><br>
+		            	</section>		
+		            </section>
+		            <section class="consumption-info">
+		            	<section class="brand-name">
+		            		<label>LOREAL</label><i class="fas fa-chevron-circle-down fa-lg"></i>
+		            	</section>
+		            	<section class="part-left">
+		            		<label>Number of post consumed by this brand</label><br>
+		            		<label for="check-extra-post">Pause collect of this brand</label><br>
+		            		<label for="progress-post">Percentage of posts consumed by this brand</label><br>
+		            	</section>
+		            	<section class="part-right">
+		            		<h4>2.500</h4><br>
+							<label class="switch">
+							  <input type="checkbox" id="check-extra-post" >
+							  <span class="slider round"></span>
+							</label><br>
+							<section class="progress" id="progress-post">
+							  <section class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+							  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+							    25%
+							  </section>
+							</section><br>
+		            	</section>
+		            	<section class="brand-name">
+		            		<label>ADIDAS</label>
+		            	</section>
+		            	<section class="part-left">
+		            		<label>Number of post consumed by this brand</label><br>
+		            		<label for="check-extra-post">Pause collect of this brand</label><br>
+		            		<label for="progress-post">Percentage of posts consumed by this brand</label><br>
+		            	</section>
+		            	<section class="part-right">
+		            		<h4>7.000</h4><br>
+							<label class="switch">
+							  <input type="checkbox" id="check-extra-post" >
+							  <span class="slider round"></span>
+							</label><br>
+							<section class="progress" id="progress-post">
+							  <section class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+							  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							    70%
+							  </section>
+							</section><br>
+		            	</section>
+		            	<section class="brand-name">
+		            		<label>NIKE</label>
+		            	</section>
+		            	<section class="part-left">
+		            		<label>Number of post consumed by this brand</label><br>
+		            		<label for="check-extra-post">Pause collect of this brand</label><br>
+		            		<label for="progress-post">Percentage of posts consumed by this brand</label><br>
+		            	</section>
+		            	<section class="part-right">
+		            		<h4>1.500</h4><br>
+							<label class="switch">
+							  <input type="checkbox" id="check-extra-post" >
+							  <span class="slider round"></span>
+							</label><br>
+							<section class="progress" id="progress-post">
+							  <section class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+							  aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%">
+							    15%
+							  </section>
+							</section><br>
+		            	</section>		
+		            </section>
+		        </div>
+		        <div class="conteudo animated zoomIn">
+		            <section class="projects-info">
+		            	<section class="part-left">
+		            		<label>Pause collect</label><br>
+		            		<label for="activation-state">Unlimited crawling</label><br>
+		            		<label for="account-type">Crawling quota</label><br>
+		            	</section>
+		            	<section class="part-right">
+							<label class="switch">
+							  <input type="checkbox" id="pause-collect">
+							  <span class="slider round"></span>
+							</label><br>
+							<label class="switch">
+							  <input type="checkbox" id="unlimited-crawling" >
+							  <span class="slider round"></span>
+							</label><br>
+		            		<input type="number" name="number-crawling" min="0" value="200"><br>
+		            	</section>	
+		            </section>
+		        </div>
+		        <div class="conteudo animated zoomIn">
+		            <section class="modules-info">
+		            	<section class="part-left">
+		            		<label for="active-analyticspro">Active Analytics Pro</label><br>
+		            		<label for="active-dashboard">Active Dashboard</label><br>
+		            		<label for="active-hist-search">Active Historical Search</label><br>
+		            	</section>
+		            	<section class="part-right">
+							<label class="switch">
+							  <input type="checkbox" id="active-analyticspro" checked>
+							  <span class="slider round"></span>
+							</label><br>
+							<label class="switch">
+							  <input type="checkbox" id="active-dashboard" checked>
+							  <span class="slider round"></span>
+							</label><br>
+							<label class="switch">
+							  <input type="checkbox" id="active-hist-search" checked>
+							  <span class="slider round"></span>
+							</label><br>
+		            	</section>	
+		            </section>
+		        </div>
+		        <div class="conteudo animated zoomIn">
+		            <section class="others-info">
+		            	<section class="part-left">
+		            		<label for="sponsored-facebook">Sponsored Facebook posts</label><br>
+		            		<label for="sources-social">Social News Sources</label><br>
+		            	</section>
+		            	<section class="part-right">
+							<label class="switch">
+							  <input type="checkbox" id="sponsored-facebook">
+							  <span class="slider round"></span>
+							</label><br>
+		            		<select id="sources-social">
+								<option>Option</option>
+								<option>Option</option>
+								<option>Option</option>
+							</select><br>	
+		            	</section>	
+		            </section>
+		        </div>
+		    </form>
+		</div>
+		<div class="submit-tab">
+			<input type="button" name="btn-submit-tab" value="Save" class="btn-submit-tab">
+		</div>		
+	</main>
+	<!-- Contacts: -->	
+	<footer class="#">
+		
+	</footer>
+	
+	<!-- Events - jQuery: -->
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
